@@ -35,7 +35,7 @@ import java.util.function.BiConsumer;
 
 public class MemberChunkManager
 {
-    private static final long MAX_CHUNK_AGE = 10 * 1000; // 10 seconds
+    private static final long MAX_CHUNK_AGE = 1000 * 1000; // 1000 seconds
     private final WebSocketClient client;
     private final ReentrantLock lock = new ReentrantLock();
     private final TLongObjectMap<ChunkRequest> requests = new TLongObjectHashMap<>();
